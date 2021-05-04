@@ -1,0 +1,85 @@
+{
+    "init": ["registration", "helloPage"],
+    "registration": [{
+        "name": "personal",
+        "fields": {
+            "surname": {
+                "type": "input",
+                "title": "Имя",
+                "value": "",
+                "default": "",
+                "placeholder": "Введите фамилию",
+                "maxLen": 50,
+                "validation": ["requied", "сyrillic"],
+                "autofocus": true,
+                "disabled": false,
+                "readonly": false
+            },
+            "name": {
+                "type": "input",
+                "title": "Имя",
+                "value": "",
+                "default": "",
+                "placeholder": "Введите имя",
+                "maxLen": 50,
+                "validation": ["requied", "сyrillic"],
+                "autofocus": false,
+                "disabled": false,
+                "readonly": false
+            },
+            "patronymic": {
+                "type": "input",
+                "title": "Имя",
+                "value": "",
+                "default": "",
+                "placeholder": "Введите фамилию",
+                "maxLen": 50,
+                "validation": ["сyrillic"],
+                "autofocus": true,
+                "disabled": false,
+                "readonly": false
+            },
+            "gender": {
+                "type": "select",
+                "title": "Пол",
+                "value": "",
+                "default": 0,
+                "placeholder": "Выберите значение",
+                "options": [
+                    {"key": 0,
+                    "value": "Не определено"},
+                    {"key": 1,
+                    "value": "Мужской"},
+                    {"key": 2,
+                    "value": "Женский"}    
+                ],
+                "validation":[],
+                "autofocus": false,
+                "disabled": false,
+                "readonly": false
+            }
+        }
+    }, 
+    {
+        "name": "contactInfo",
+        "fields": {
+            "email": {
+                "type":"input",
+                "title": "Email",
+                "validation":["requied", "email"],
+                "autofocus": true,
+                "disabled": false,
+                "readonly": false
+            },
+            "phone": {
+                "type":"input",
+                "title": "Телефон",
+                "validation":["requied", "mobile"],
+                "autofocus": false,
+                "disabled": false,
+                "readonly": false
+            }
+        }
+    }],
+    "helloPage": []
+  }
