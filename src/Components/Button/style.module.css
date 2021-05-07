@@ -1,0 +1,17 @@
+.btn-wrapper{
+    position: relative;
+    border-radius: 5px;
+    margin: 1rem;
+    cursor: pointer;
+    line-height: 16px;
+    
+}
+
+.btn-wrapper:hover{
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.btn-primary{
+    padding: 2rem;
+    background-color: hotpink;
+}
